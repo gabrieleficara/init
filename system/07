@@ -1,1 +1,1 @@
-ps aux | grep -e "SSH" | cut -d " " -f3
+cat /var/run/sshd.pid

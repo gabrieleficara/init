@@ -1,0 +1,1 @@
+with root privileges you need to add to the /etc/hosts file the line "46.19.122.85	intra.42.fr"

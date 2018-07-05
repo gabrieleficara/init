@@ -1,0 +1,3 @@
+echo "sudo apt-get update && sudo apt-get upgrade -y
+sudo cp /var/log/apt/term.log  /var/log/update_script.log" > /home/vagrant/update
+echo "0 4 * * 1 /home/vagrant/update" | crontab

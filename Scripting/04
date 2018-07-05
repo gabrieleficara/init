@@ -1,0 +1,6 @@
+md5sum /etc/crontab > crontab.md5
+echo "if [ *\"FAILED\"* = \"$(md5sum -c crontab.md5)\" ]
+then
+echo "null" | mail -s \"cronotab changed\" root
+fi" > /home/vagrant/crontabtest
+echo "0 0 * * * /home/vagrant/crontabtest" | crontab
